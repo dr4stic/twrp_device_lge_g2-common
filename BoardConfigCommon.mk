@@ -146,8 +146,5 @@ PRODUCT_COPY_FILES += device/lge/g2-common/twrp/twrp.fstab:recovery/root/etc/twr
 # Post recovery boot script
 PRODUCT_COPY_FILES += device/lge/g2-common/twrp/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
 
-# Recovery gets it's own init.rc files
-#PRODUCT_COPY_FILES += device/lge/g2-common/twrp/init.recovery.g2.rc:recovery/root/init.recovery.g2.rc
-
 # Enable f2fs filesystem tools
 TARGET_USERIMAGES_USE_F2FS := true
