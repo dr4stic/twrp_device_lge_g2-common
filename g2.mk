@@ -138,6 +138,10 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    e2fsck
+
 PRODUCT_PACKAGES += \
     libgenlock \
     liboverlay \
