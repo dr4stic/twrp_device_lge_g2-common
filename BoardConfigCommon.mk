@@ -130,8 +130,6 @@ WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/fw_bcmdhd_apsta.bin"
 
 
 # TWRP Option
-BOARD_HAS_NO_REAL_SDCARD := true
-RECOVERY_SDCARD_ON_DATA := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_USB_STORAGE := true
 TW_INCLUDE_L_CRYPTO := true
@@ -140,6 +138,11 @@ TW_MAX_BRIGHTNESS := 255
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_THEME := portrait_hdpi
 BOARD_HAS_LARGE_FILESYSTEM := true
+
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_INTERNAL_STORAGE_PATH := "/data/media/0"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 
 PRODUCT_COPY_FILES += device/lge/g2-common/twrp/twrp.fstab:recovery/root/etc/twrp.fstab
 
