@@ -147,3 +147,22 @@ BOARD_USES_QC_TIME_SERVICES := true
 
 # Device headers
 TARGET_SPECIFIC_HEADER_PATH := device/lge/g2-common/include
+
+
+# TWRP Option
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_NO_USB_STORAGE := true
+TW_INCLUDE_L_CRYPTO := true
+TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.177/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_THEME := portrait_hdpi
+BOARD_HAS_LARGE_FILESYSTEM := true
+
+# Recovery gets it's own init.rc files
+#PRODUCT_COPY_FILES += device/lge/g2-common/twrp/init.recovery.g2.rc:recovery/root/init.recovery.g2.rc
+
+# Enable f2fs filesystem tools
+TARGET_USERIMAGES_USE_F2FS := true
