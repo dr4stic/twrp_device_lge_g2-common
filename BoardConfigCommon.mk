@@ -161,6 +161,8 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_THEME := portrait_hdpi
 BOARD_HAS_LARGE_FILESYSTEM := true
 
+PRODUCT_COPY_FILES += device/lge/g2-common/twrp/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Recovery gets it's own init.rc files
 #PRODUCT_COPY_FILES += device/lge/g2-common/twrp/init.recovery.g2.rc:recovery/root/init.recovery.g2.rc
 
