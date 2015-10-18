@@ -3,11 +3,12 @@ The following guide is used for this build:
    http://forum.xda-developers.com/showthread.php?t=1943625
 
 
-The following patches have been applied (cherry picked):
-
-   https://gerrit.omnirom.org/#/c/12728/   
-
-
 The following patch is adapted (by hand):
 
    http://review.cyanogenmod.org/#/c/89474/
+
+
+The following patches have been applied (cherry picked):
+
+   https://gerrit.omnirom.org/#/c/12728/   
+   http://review.cyanogenmod.org/#/c/110402/
